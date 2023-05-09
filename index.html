@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="стиль сайта/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <title>SPEEDY.COM</title>
+  </head>
+
+  <body id="body">
+    <section id="burger" class="burger_meny">
+      <div class="head">
+        <h1>Car shop</h1>
+
+        <svg
+          class="burger_btn"
+          style="fill: black"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          viewBox="0 96 960 960"
+          width="48"
+          fill="balck">
+          <path
+            fill="balck"
+            d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+        </svg>
+      </div>
+
+      <a data-elem="#about">About</a>
+      <a data-elem="#serv">Service</a>
+      <a data-elem="#Work">Work</a>
+      <a data-elem="#Contact">Contact</a>
+    </section>
+
+    <header>
+      <div class="intro container">
+        <svg
+          class="burger_btn"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          viewBox="0 96 960 960"
+          width="48">
+          <path
+            d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+        </svg>
+        <h2 class="intro__suptitle">Create your dream</h2>
+        <h1 class="intro__title">Welcome to SPEEDY!</h1>
+
+        <div class="links burger_instead">
+          <div class="cart" id="cart">
+            <h2>Корзина товаров</h2>
+            <div id="cart-items">
+              <!-- Список товаров в корзине будет появляться здесь -->
+            </div>
+            <button class="btnclr44" onclick="hideCart()">Закрыть</button>
+        </div>
+          <a class="btn" href="#about">About</a>
+          <a class="btn" href="#serv">Service</a>
+          <a class="btn" href="#Work">Work</a>
+          <a class="btn" href="#Contact">Contact</a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section">
+        <a class="section__inner1" href="catalog_cars.html"> Cars Shop </a>
+        <a class="section__inner2" href="catalog_parts_for_tune.html">
+          Parts for tune
+        </a>
+        <a class="section__inner3" href="catalog_for_bodukits.html">
+          Bodykits
+        </a>
+      </section>
+
+      <div class="section_about" id="about">
+        <h1 class="abus_h">About us</h1>
+        <span>
+          <p class="p_about">
+            In our online store you can buy both a car and spare parts for it.
+            Our store also offers you a job as a consultant or mechanic. Here
+            you can not deny your imagination and do absolutely what you want,
+            within your budget.
+          </p>
+          <p class="p_about">
+            Also in our store there are very often discounts, and also in
+            cooperation with us we guarantee you a permanent discount of 10%.
+          </p>
+        </span>
+      </div>
+
+      <div class="section_serv" id="serv">
+        <h1 class="serv_h">Service</h1>
+        <span>
+          <p class="p_serv">
+            Our service differs from others in that our service does not cheat
+            and does not want to take more money from you. In our service, in
+            the first three months after purchase, your product is repaired in
+            case of a breakdown. If we can't fix something, we will give you
+            money for the goods back or a new product.
+          </p>
+        </span>
+      </div>
+
+      <div class="section_work" id="Work">
+        <h1 class="work_h">Work</h1>
+        <p class="p_work">You can work with us! But previously sign up:</p>
+        <form class="job">
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="8"
+            required />
+
+          <label for="confirm_password">Confirm password:</label>
+          <input
+            type="password"
+            id="confirm_password"
+            name="confirm_password"
+            minlength="8"
+            required />
+
+          <button type="submit" id="btnsu" class="btnform">SIGN UP</button>
+        </form>
+      </div>
+    </main>
+    <footer id="Contact" class="footer">
+      <h1 class = "h_f">Contacts</h1>
+      <p id="p1"></p>
+      <a href="https://t.me/Micromolekyla00" class="a111"><p id="p2"></p></a>  <!-- сделать ссылку на тг при помоци а-->
+      <p id="p3"></p>
+      <p id="p4"></p> 
+    </footer>
+
+    <script src="./js site dynamc/burgerMeny.js"></script>
+    <script src="./js site dynamc/infoSite.js"></script>
+    <script src="./js site dynamc/start.js"></script>
+  </body>
+</html>

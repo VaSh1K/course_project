@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="стиль сайта/style.css" />
+    <link
+      rel="stylesheet"
+      href="стиль сайта/style_to_catalog_cars.css"
+      <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <script src="js site dynamc/start.js"></script>
+    <title>SPEEDY.COM</title>
+  </head>
+  <body id="body">
+    <section id="burger" class="burger_meny">
+      <div class="head">
+        <h1>Car shop</h1>
+
+        <svg
+          class="burger_btn"
+          style="fill: black"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          viewBox="0 96 960 960"
+          width="48"
+          fill="balck">
+          <path
+            fill="balck"
+            d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+        </svg>
+      </div>
+
+      <a data-elem="#rocketBunny">Rocket Bunny</a>
+      <a data-elem="#garageMak">Garage Mak</a>
+      <a onclick = "showCart()">Cart</a>
+    </section>
+
+    <header>
+      <svg
+        class="burger_btn"
+        xmlns="http://www.w3.org/2000/svg"
+        height="48"
+        viewBox="0 96 960 960"
+        width="48">
+        <path
+          d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+      </svg>
+
+      <div class="intro container">
+        <h2 class="intro__suptitle">Create your dream</h2>
+        <h1 class="intro__title">Welcome to SPEEDY!</h1>
+        <div class="links">
+          <div class="links burger_instead">
+            <div class="cart" id="cart">
+              <h2>Корзина товаров</h2>
+              <div id="cart-items">
+                <!-- Список товаров в корзине будет появляться здесь -->
+              </div>
+              <button class="btnclr44" onclick="hideCart()">Закрыть</button>
+            </div>
+          <a class="btn" href="index.html">Back to homepage</a>
+          <a class="btn" href="#" onclick = "showCart()"
+            ><svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 3H4.5L6.5 17H17C18.1046 17 19 17.8954 19 19C19 20.1046 18.1046 21 17 21C15.8954 21 15 20.1046 15 19M9 5H21.0001L19.0001 11M18 14H6.07141M11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z"
+                stroke="#fce38a"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"/></svg
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1 class="toyota">Body Kits</h1>
+      <h2 id="rocketBunny" class="toyota">(Rocket Bunny)</h2>
+      <div class="product-cards">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора обвесов/Rocket Bunny rx7.jpg"
+              alt="Car 1" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Rocket Bunny for RX7</h3>
+            <p class="product-card__description"></p>
+            <div class="product-card__price">4,000$</div>
+            <button class="product-card__button" onclick="addToCart('Rocket Bunny for RX7    ', 4000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора обвесов/Rocket Bunny rx8.jpg"
+              alt="Car 2" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Rocket Bunny for RX8</h3>
+            <p class="product-card__description"></p>
+            <div class="product-card__price">3,500$</div>
+            <button class="product-card__button" onclick="addToCart('Rocket Bunny for RX8    ', 3500)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора обвесов/Rocket Bunny gtr s14.jpg"
+              alt="Car 3" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Rocket Bunny for S14</h3>
+            <p class="product-card__description"></p>
+            <div class="product-card__price">5,000$</div>
+            <button class="product-card__button" onclick="addToCart('Rocket Bunny for S14    ', 5000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора обвесов/Rocket Bunny gtr r35.jpg"
+              alt="Car 4" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Rocket Bunny for R35</h3>
+            <p class="product-card__description"></p>
+            <div class="product-card__price">4,500$</div>
+            <button class="product-card__button" onclick="addToCart('Rocket Bunny for R35    ', 4500)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <h1 id="bodyKits" class="toyota">Body Kits</h1>
+      <h2 id="garageMak" class="toyota">(Garage Mak)</h2>
+
+      <div class="product-cards">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора обвесов/GARAGE MAK supra.png"
+              alt="Dv1" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">GARAGE MAK for Supra</h3>
+            <p class="product-card__description"></p>
+            <div class="product-card__price">8,000$</div>
+            <button class="product-card__button" onclick="addToCart('GARAGE MAK for Supra    ', 8000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора обвесов/GARAGE MAK 350z.png"
+              alt="Dv2" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">GARAGE MAK for 350z</h3>
+            <p class="product-card__description"></p>
+            <div class="product-card__price">6,450$</div>
+            <button class="product-card__button" onclick="addToCart('GARAGE MAK for 350z    ', 6450)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора обвесов/S15 GARAGE MAK.png"
+              alt="Dv3" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">GARAGE MAK for S15</h3>
+            <p class="product-card__description"></p>
+            <div class="product-card__price">7,000$</div>
+            <button class="product-card__button" onclick="addToCart('GARAGE MAK for S15    ', 7000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора обвесов/sx180 garage mak.png"
+              alt="Dv4" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">GARAGE MAK for SX180</h3>
+            <p class="product-card__description"></p>
+            <div class="product-card__price">7,500$</div>
+            <button class="product-card__button" onclick="addToCart('GARAGE MAK for SX180    ', 7500)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js site dynamc/burgerMeny.js"></script>
+    <script src="./js site dynamc/start.js"></script>
+  </body>
+</html>

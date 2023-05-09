@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="./стиль сайта/style.css" />
+    <link rel="stylesheet" href="./стиль сайта/style_to_catalog_cars.css" />
+    <title>SPEEDY.COM</title>
+  </head>
+
+  <body id="body">
+    <section id="burger" class="burger_meny">
+      <div class="head">
+        <h1>Car shop</h1>
+
+        <svg
+          class="burger_btn"
+          style="fill: black"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          viewBox="0 96 960 960"
+          width="48"
+          fill="balck">
+          <path
+            fill="balck"
+            d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+        </svg>
+      </div>
+
+      <a data-elem="#toyta">Toyta</a>
+      <a data-elem="#honda">Honda</a>
+      <a data-elem="#nissan">Nissan </a>
+      <a data-elem="#mazda">Mazda</a>
+      <a onclick = "showCart()">Cart</a>
+    </section>
+
+    <header>
+      <div class="intro container">
+        <svg
+          class="burger_btn"
+          xmlns="http://www.w3.org/2000/svg"
+          height="48"
+          viewBox="0 96 960 960"
+          width="48">
+          <path
+            d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z" />
+        </svg>
+
+        <h2 class="intro__suptitle">Create your dream</h2>
+        <h1 class="intro__title">Welcome to SPEEDY!</h1>
+
+        <div class="links burger_instead">
+          <div class="cart" id="cart">
+            <h2>Корзина товаров</h2>
+            <div id="cart-items">
+              <!-- Список товаров в корзине будет появляться здесь -->
+            </div>
+            <button class="btnclr44" onclick="hideCart()">Закрыть</button>
+        </div>
+
+        <div class="links">
+          <a class="btn" href="index.html">Back to homepage</a>
+          <a class="btn" href="#" onclick = "showCart()"
+            ><svg
+              width="30px"
+              height="30px"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M2 3H4.5L6.5 17H17C18.1046 17 19 17.8954 19 19C19 20.1046 18.1046 21 17 21C15.8954 21 15 20.1046 15 19M9 5H21.0001L19.0001 11M18 14H6.07141M11 19C11 20.1046 10.1046 21 9 21C7.89543 21 7 20.1046 7 19C7 17.8954 7.89543 17 9 17C10.1046 17 11 17.8954 11 19Z"
+                stroke="#fce38a"
+                stroke-width="1.5"
+                stroke-linecap="round"
+                stroke-linejoin="round"/></svg
+          ></a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!--Выбор автомобилей тойота-->
+      <h1 id="toyta" class="toyota">Toyota</h1>
+      <div class="product-cards">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(супра)/а60.png"
+              alt="Car 1" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Supra A60 P-type</h3>
+            <p class="product-card__description">
+              Just for driving on city roads , perfect chose for family
+            </p>
+            <div class="product-card__price">$12,000</div>
+            <button class="product-card__button" onclick="addToCart('Toyta Supra A60 P-type    ', 12000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(супра)/а70.png"
+              alt="Car 2" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Supra A70</h3>
+            <p class="product-card__description">
+              Perfect chose for fast people , fast and beautiful
+            </p>
+            <div class="product-card__price">$20,000</div>
+            <button class="product-card__button" onclick="addToCart('Toyta Supra A70    ', 20000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(супра)/a80.png"
+              alt="Car 3" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Supra A80</h3>
+            <p class="product-card__description">
+              When you have got a lot of money , you can make a "monster"
+            </p>
+            <div class="product-card__price">$60,000</div>
+            <button class="product-card__button" onclick="addToCart('Toyta Supra A80    ', 60000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(супра)/а90.png"
+              alt="Car 4" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Supra A90</h3>
+            <p class="product-card__description">
+              Fast , beautiful , stylish , 3 types in one expensive dream
+            </p>
+            <div class="product-card__price">$90,000</div>
+            <button class="product-card__button" onclick="addToCart('Toyta Supra A90    ', 90000)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вторая линия карточек -->
+
+      <div class="product-cards1">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(марк)/кузов 70 марк2.png"
+              alt="Car 5" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Mark 2 Type 70</h3>
+            <p class="product-card__description">
+              Perfect for upgrades and for stylish drifting
+            </p>
+            <div class="product-card__price">$15,000</div>
+            <button class="product-card__button" onclick="addToCart('Toyta Mark 2 Type 70    ', 15000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(марк)/80 к марк 2.png"
+              alt="Car 6" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Mark 2 Type 80</h3>
+            <p class="product-card__description">
+              Also how Type 70 but more powerful
+            </p>
+            <div class="product-card__price">$29,000</div>
+            <button class="product-card__button" onclick="addToCart('Toyta Mark 2 Type 80    ', 29000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(марк)/90jsx.png"
+              alt="Car 7" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Mark 2 JSX90</h3>
+            <p class="product-card__description">
+              All drifters chose this car becourse this is legendary "pillar
+              catcher"
+            </p>
+            <div class="product-card__price">$40,000</div>
+            <button class="product-card__button" onclick="addToCart('Toyta Mark 2 JSX90    ', 40000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(марк)/100jsx.png"
+              alt="Car 8" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Mark 2 JSX100</h3>
+            <p class="product-card__description">
+              Also how 90 but another style of body
+            </p>
+            <div class="product-card__price">$45,000</div>
+            <button class="product-card__button" onclick="addToCart('Toyta Mark 2 JSX100    ', 45000)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!--Выбор автомобилей хонда -->
+      <h1 id="honda" class="toyota">Honda</h1>
+      <div class="product-cards">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(хонда)/civ type r.png"
+              alt="Car 1" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Civic Type-R</h3>
+            <p class="product-card__description">
+              Hatchback which can "fly" if you want. Not flying as a plane!!
+            </p>
+            <div class="product-card__price">$5,000</div>
+            <button class="product-card__button" onclick="addToCart('Honda Civic Type-R    ', 5000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(хонда)/honda civic 2008.png"
+              alt="Car 2" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Civic 2008 Coupe</h3>
+            <p class="product-card__description">
+              This car feels good on big roads , also economic for fuel
+            </p>
+            <div class="product-card__price">$11,000</div>
+            <button class="product-card__button" onclick="addToCart('Honda Civic 2008 Coupe    ', 11000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(хонда)/2020_honda_civic_type_r-1.png"
+              alt="Car 3" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Civic Type-R 2020</h3>
+            <p class="product-card__description">
+              Hatchback for hole family , and for trips to sea!
+            </p>
+            <div class="product-card__price">$70,000</div>
+            <button class="product-card__button" onclick="addToCart('Honda Civic Type-R 2020    ', 70000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора(хонда)/civ type r 2023.png"
+              alt="Car 4" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Civic Type-R 2023</h3>
+            <p class="product-card__description">
+              New design of honda , for business riders and stylish people
+            </p>
+            <div class="product-card__price">$110,000</div>
+            <button class="product-card__button" onclick="addToCart('Honda Civic Type-R 2023    ', 110000)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Выбор автомобилей ниссан-->
+      <h1 id="nissan" class="toyota">Nissan</h1>
+      <div class="product-cards">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/Картинки для выбора (ниссан)/r32.png"
+              alt="Car 1" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">R 32</h3>
+            <p class="product-card__description">
+              Perfect chose for drifters , and very percpective for tunning
+            </p>
+            <div class="product-card__price">$22,000</div>
+            <button class="product-card__button" onclick="addToCart('Nissan R 32    ', 22000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/Картинки для выбора (ниссан)/r33.png"
+              alt="Car 2" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">R 33</h3>
+            <p class="product-card__description">
+              More powerful than his dad , and more stylish
+            </p>
+            <div class="product-card__price">$25,000</div>
+            <button class="product-card__button" onclick="addToCart('Nissan R 33    ', 25000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/Картинки для выбора (ниссан)/r34.png"
+              alt="Car 3" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">R 34</h3>
+            <p class="product-card__description">
+              I can say one word "TUNE MONSTER"
+            </p>
+            <div class="product-card__price">$100,000</div>
+            <button class="product-card__button" onclick="addToCart('Nissan R 34    ', 100000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/Картинки для выбора (ниссан)/r35.png"
+              alt="Car 4" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">R 35</h3>
+            <p class="product-card__description">
+              I see that car on drag racings and highways , fast and gorgerous
+            </p>
+            <div class="product-card__price">$130,000</div>
+            <button class="product-card__button" onclick="addToCart('Nissan R 35    ', 130000)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Вторая линия карточек -->
+
+      <div class="product-cards1">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/Картинки для выбора (ниссан)/s12.png"
+              alt="Car 5" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Silvia S12</h3>
+            <p class="product-card__description">
+              Style also how at "hachi-roku" , but another engine
+            </p>
+            <div class="product-card__price">$8-9,000</div>
+            <button class="product-card__button" onclick="addToCart('Nissan Silvia S12    ', 9000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/Картинки для выбора (ниссан)/s13.png"
+              alt="Car 6" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Silvia S13</h3>
+            <p class="product-card__description">
+              Perfect choice for drifting on hills
+            </p>
+            <div class="product-card__price">$12,000</div>
+            <button class="product-card__button" onclick="addToCart('Nissan Silvia S13    ', 12000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/Картинки для выбора (ниссан)/s14.png"
+              alt="Car 7" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Silvia S14</h3>
+            <p class="product-card__description">
+              This is short description of word style
+            </p>
+            <div class="product-card__price">$30,000</div>
+            <button class="product-card__button" onclick="addToCart('Nissan Silvia S14    ', 30000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/Картинки для выбора (ниссан)/s15.png"
+              alt="Car 8" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Silvia S15</h3>
+            <p class="product-card__description">
+              This is not a car , this CAAAR.(Hello to Gocha!!)
+            </p>
+            <div class="product-card__price">$70,000</div>
+            <button class="product-card__button" onclick="addToCart('Nissan Silvia S15    ', 70000)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Выбор автомобилей мазда -->
+
+      <h1 id="mazda" class="toyota">Mazda</h1>
+      <div class="product-cards">
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора (мазда)/fc35.png"
+              alt="Car 1" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">FC 35</h3>
+            <p class="product-card__description">
+              The beggining of style , perfect for drifting
+            </p>
+            <div class="product-card__price">$20,000</div>
+            <button class="product-card__button" onclick="addToCart('Mazda FC 35    ', 20000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора (мазда)/rx7.png"
+              alt="Car 2" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">RX 7</h3>
+            <p class="product-card__description">
+              This car very rare , but you can see her on drifting tracks
+            </p>
+            <div class="product-card__price">$36,000</div>
+            <button class="product-card__button" onclick="addToCart('Mazda RX 7    ', 36000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора (мазда)/rx8.png"
+              alt="Car 3" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">RX 8</h3>
+            <p class="product-card__description">
+              Best choide for hole family!
+            </p>
+            <div class="product-card__price">$17,000</div>
+            <button class="product-card__button" onclick="addToCart('Mazda RX 8    ', 17000)">Add to cart</button>
+          </div>
+        </div>
+        <div class="product-card">
+          <div class="product-card__image">
+            <img
+              src="./kartinki/картинки для выбора (мазда)/6sedan2013.png"
+              alt="Car 4" />
+          </div>
+          <div class="product-card__info">
+            <h3 class="product-card__title">Takeri</h3>
+            <p class="product-card__description">
+              This car a perfect choice for buisnessmans and womans
+            </p>
+            <div class="product-card__price">$86-90,000</div>
+            <button class="product-card__button" onclick="addToCart('Mazda Takeri    ', 90000)">Add to cart</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="./js site dynamc/start.js"></script>
+    <script src="./js site dynamc/burgerMeny.js"></script>
+  </body>
+</html>
